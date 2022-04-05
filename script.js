@@ -28,7 +28,7 @@ holdBtn.addEventListener('click', ()=> {
     if(!gameOver) {
         totalScore[`${activePlayer}`] += currentScore
     document.querySelector(`#score--${activePlayer}`).textContent = totalScore[`${activePlayer}`]
-    if(totalScore[`${activePlayer}`] >= 20) {
+    if(totalScore[`${activePlayer}`] >= 100) {
         gameOver = true
         document.querySelector(`.player--0`).classList.remove(`player--active`)
         document.querySelector(`.player--1`).classList.remove(`player--active`)
